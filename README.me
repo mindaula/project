@@ -1,0 +1,102 @@
+Finance Manager
+Introduction
+The Finance Manager is a robust desktop application designed to make managing your finances simpler and more intuitive. With its user-friendly interface and a wide range of features, this tool is perfect for anyone looking to take control of their financial life. Whether it’s budget planning, tracking expenses, or forecasting future spending with the help of AI, the Finance Manager has you covered.
+
+This application is ideal for individuals who want to monitor their expenses effectively—whether that’s creating a household budget, cutting down on unnecessary spending, or preparing for future financial goals. By combining machine learning capabilities with an accessible design, Finance Manager not only tracks where your money is going but also predicts spending trends based on historical data.
+
+Key Features
+1. User Authorization
+Registration and Login: The app provides secure authentication with password hashing using the bcrypt algorithm, ensuring your financial data stays safe.
+Multi-user Support: Each user has their own personal financial space, secured by a unique user ID, keeping data private and protected.
+2. Budget Planning
+Create Categories: Users can set up custom budget categories or use predefined ones such as "Food," "Transport," and "Entertainment." This flexibility makes managing your finances more precise.
+Assign Amounts: Allocate specific amounts to each category to track planned expenses, helping you stay on top of your financial goals.
+3. Expense Tracking
+Simple Input: Log expenses quickly by entering the date, category, and amount, allowing you to maintain a clear record of your spending.
+Overview and Analysis: All expenses are displayed in an organized format, making it easy to identify spending trends, avoid overspending, and stick to your budget.
+4. AI-driven Forecasts
+Machine Learning: The app uses machine learning to predict your future expenses based on past spending patterns. This feature helps you identify potential shortfalls or budget overruns early.
+Visualization: Spending patterns are presented through clear charts and graphs, giving you valuable insights to make informed financial decisions.
+5. User-friendly Interface
+Intuitive Navigation: Designed for ease of use, the app is perfect for beginners. Its clean layout and straightforward menus make every feature accessible.
+Multiple Windows: Each module opens in its own window, ensuring a clutter-free and smooth user experience.
+Installation
+Prerequisites
+Before installing the Finance Manager, ensure the following:
+
+Python 3.10+: Download the latest version from the official Python website if it’s not already installed.
+Pip: Verify that pip (the Python package manager) is installed by running pip --version in your terminal.
+Steps to Install and Run
+Clone the Repository:
+
+
+git clone https://github.com/yourusername/finance-manager.git  
+cd finance-manager  
+
+
+Initialize the Database: The database will be created automatically when the app is launched for the first time. However, you can also initialize it manually:
+
+
+python database.py  
+Run the Application: Start the app by running:
+
+
+
+python app.py  
+
+
+Usage
+Login and Registration: Open the app and log in with your credentials, or register a new account if you don’t already have one.
+Set Up Budget: Navigate to “Set Up Budgets” to create categories and assign specific budget amounts, such as “Food” or “Transport.”
+Track Expenses: Use the “Track Expenses” feature to log each transaction by entering its amount, category, and date.
+View Forecasts: Access “Forecast Expenses” to see AI-driven predictions based on your spending history.
+Troubleshooting
+ModuleNotFoundError:
+
+Cause: Missing modules.
+Solution: Run pip install -r requirements.txt to install all dependencies.
+Database Error:
+
+Cause: Missing or corrupted database file.
+Solution: Delete finance_manager.db and restart the application to recreate the database.
+Login Failure:
+
+Cause: Incorrect username or password.
+Solution: Verify your credentials or register a new account.
+Contributing
+The Finance Manager is an open-source project, and contributions are welcome! Here’s how you can help:
+
+Fork the repository.
+
+
+Create a new branch:
+
+git checkout -b feature/your-idea  
+
+
+Make your changes and commit:
+
+git commit -m "Description of your change"  
+
+
+Push your branch:
+
+git push origin feature/your-idea  
+
+
+Open a pull request on GitHub.
+Roadmap
+We’re planning exciting updates for the future:
+
+Mobile App: A mobile version for iOS and Android is on the way.
+Multi-language Support: Support for multiple languages to reach a wider audience.
+Advanced Reports: Expanded analytical tools for detailed financial reporting.
+FAQ
+Can I back up my data?
+Currently, there’s no built-in backup feature, but you can manually save the finance_manager.db file to create a backup.
+
+Is the app free?
+Yes, the Finance Manager is free and open-source.
+
+Can I add custom categories?
+Absolutely! Use the “Expense Tracker” module to create categories tailored to your needs.

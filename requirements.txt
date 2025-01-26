@@ -1,0 +1,5 @@
+numpy
+matplotlib
+bcrypt
+scikit-learn
+matplotlib
